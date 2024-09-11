@@ -15,28 +15,19 @@ This project was built with the following programs and versions:
 1. To run the tests, type `npm run test`
 1. To run the program and see the results in the terminal, type `node run.js`
 
+# Classes
+
+Tamagotchi
+
+Game
+
+Player ??
+
+
 # Process and execution
 
-Build the program according to TDD principles.
-
-1. Initalise a new tamagotchi with the following attributes:
-    - Name
-    - Species
-
-1. Tamagotchi has stats:
-    - Age
-    - Happiness
-    - Cleanliness
-    - Hunger
-    - Thirst
-    - Energy
-
-1. User can care for their tamagotchi.
-    - User can feed the tamagotchi.
-    - User can play with the tamagotchi.
-    - User can give the tamagotchi a bath.
-
-1. User can see their tamagotchi's stats.
-    - Stats indicate the needs of the tamagotchi.
-    - Stats are changed by the user's interactions with the tamagotchi.
-
+- [x] Initialise a new tamagotchi
+- [x] Methods to change the tamagotchi's stats
+- [ ] Prompt user to add a name when creating a new tamagotchi
+- [ ] Display the tamagotchi's stats
+- [ ] Prompt user to interact with the tamagotchi
