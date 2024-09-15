@@ -1,1 +1,0 @@
-console.log("Welcome to the Tamagotchi Simulator!");

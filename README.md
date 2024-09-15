@@ -15,19 +15,12 @@ This project was built with the following programs and versions:
 1. To run the tests, type `npm run test`
 1. To run the program and see the results in the terminal, type `node run.js`
 
-# Classes
-
-Tamagotchi
-
-Game
-
-Player ??
-
-
 # Process and execution
 
 - [x] Initialise a new tamagotchi
 - [x] Methods to change the tamagotchi's stats
-- [ ] Prompt user to add a name when creating a new tamagotchi
+- [ ] Prompt user to name the tamagotchi and choose a species
+- [ ] Persist the tamagotchi's
 - [ ] Display the tamagotchi's stats
-- [ ] Prompt user to interact with the tamagotchi
+- [ ] Prompt user to interact with the tamagotchi (call the methods)
+- [ ] Create methods specific to the species (bark / miaow)
