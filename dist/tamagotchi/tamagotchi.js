@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 class Tamagotchi {
     constructor(name, species) {
         this.name = name;
@@ -33,5 +31,5 @@ class Tamagotchi {
         this.energy = 100;
     }
 }
-exports.default = Tamagotchi;
+export default Tamagotchi;
 //# sourceMappingURL=tamagotchi.js.map

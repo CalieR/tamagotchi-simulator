@@ -1,4 +1,9 @@
 {
+  "name": "tamagotchi-simulator",
+  "version": "0.0.1",
+  "description": "A program that allows users to create and care for their own virtual pets.",
+  "main": "./src/index.js",
+  "type": "module",
   "scripts": {
     "test": "jest",
     "build": "tsc"
@@ -15,6 +20,6 @@
   "dependencies": {
     "@inquirer/prompts": "^5.5.0",
     "commander": "^12.1.0",
-    "figlet": "^1.7.0"
+    "inquirer": "^10.2.2"
   }
 }

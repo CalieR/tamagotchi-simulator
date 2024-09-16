@@ -22,5 +22,5 @@ This project was built with the following programs and versions:
 - [ ] Prompt user to name the tamagotchi and choose a species
 - [ ] Persist the tamagotchi's
 - [ ] Display the tamagotchi's stats
-- [ ] Prompt user to interact with the tamagotchi (call the methods)
+- [ ] Prompt user to interact with the tamagotchi (call the methods) - Menu?
 - [ ] Create methods specific to the species (bark / miaow)
