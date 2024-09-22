@@ -13,6 +13,7 @@ import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
 import { v4 as uuidv4 } from 'uuid';
+// https://stackoverflow.com/questions/64453859/directory-import-is-not-supported-resolving-es-modules-with-node-js
 import models from './db/models/index.js';
 // import { spec } from 'node:test/reporters';
 const app = express();
@@ -58,8 +59,4 @@ app.delete('/tamagotchis/:id', (req, res) => {
     models.tamagotchis = otherTamagotchis;
     return res.send(tamagotchi);
 });
-// when the db is simply a folder in the app
-//   app.get("/tamagotchis", (req: any, res: any) => {
-//     res.sendFile(__dirname + "/db/tamagotchis.json");
-//   });
 //# sourceMappingURL=server.js.map
