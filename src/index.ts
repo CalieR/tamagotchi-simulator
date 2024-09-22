@@ -24,6 +24,7 @@ async function createTamagotchi() {
 
   const tamagotchi = new Tamagotchi(name, species);
   console.log(tamagotchi);
+  // displayMenu();
 }
 
 createTamagotchi();

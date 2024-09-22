@@ -9,8 +9,7 @@ describe("Tamagotchi", () => {
     });
     test("it has the following stats", () => {
       const tamagotchi = new Tamagotchi("Bob", "cat");
-      expect(tamagotchi.hunger).toBe(100);
-      expect(tamagotchi.thirst).toBe(100);
+      expect(tamagotchi.hunger).toBe(100); 
       expect(tamagotchi.health).toBe(100);
       expect(tamagotchi.happiness).toBe(100);
       expect(tamagotchi.cleanliness).toBe(100);
@@ -23,15 +22,17 @@ describe("Tamagotchi stats", () => {
   describe("hunger", () => {
     test("it can be fed to reduce hunger", () => {
       const tamagotchi = new Tamagotchi("Bob", "cat");
+      tamagotchi.hunger = 100;
       tamagotchi.feed();
-      expect(tamagotchi.hunger).toBe(90);
-    });
- });
- describe("thirst", () => {
-    test("it can be given a drink to reduce thirst", () => {
+      expect(tamagotchi.hunger).toBe(0);
+    }),
+    test("it can't be fed if it's full", () => {
+      const log = jest.spyOn(console, "log");
       const tamagotchi = new Tamagotchi("Bob", "cat");
-      tamagotchi.drink();
-      expect(tamagotchi.thirst).toBe(80);
+      tamagotchi.hunger = 0;
+      tamagotchi.feed();
+      expect(log).toHaveBeenCalledWith("I'm full!");
+      log.mockReset();
     });
  });
  describe("health", () => {
