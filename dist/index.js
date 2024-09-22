@@ -10,6 +10,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 import { input } from '@inquirer/prompts';
 import { capitalise } from './utils.js';
+import Tamagotchi from './tamagotchi/tamagotchi.js';
 function createTamagotchi() {
     return __awaiter(this, void 0, void 0, function* () {
         let name;
@@ -25,11 +26,12 @@ function createTamagotchi() {
             default: 'Cat',
             required: true,
         });
-        console.log(`${name} is a ${species}`);
+        const tamagotchi = new Tamagotchi(name, species);
+        console.log(tamagotchi);
     });
 }
 createTamagotchi();
-// call the constructor with the user's input
+// store the tamagotchi in a db
 // display the newly created tamagotchi
 // add interactions - prompt individually or provide a menu (inquirer.select)
 // provide way to end the loop and exit the program

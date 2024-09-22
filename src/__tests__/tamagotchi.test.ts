@@ -1,4 +1,4 @@
-import Tamagotchi from "./tamagotchi";
+import Tamagotchi from "../tamagotchi/tamagotchi";
 
 describe("Tamagotchi", () => {
   describe("initialise a new tamagotchi", () => {
