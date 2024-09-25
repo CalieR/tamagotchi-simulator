@@ -27,7 +27,7 @@ describe("Tamagotchi stats", () => {
       expect(tamagotchi.hunger).toBe(0);
     }),
     test("it can't be fed if it's full", () => {
-      const log = jest.spyOn(console, "log");
+      const log = jest.spyOn(console, "log").mockImplementation(() => {});
       const tamagotchi = new Tamagotchi("Bob", "cat");
       tamagotchi.hunger = 0;
       tamagotchi.feed();

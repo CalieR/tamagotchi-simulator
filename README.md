@@ -19,8 +19,14 @@ This project was built with the following programs and versions:
 
 - [x] Initialise a new tamagotchi
 - [x] Methods to change the tamagotchi's stats
-- [ ] Prompt user to name the tamagotchi and choose a species
-- [ ] Persist the tamagotchi's
-- [ ] Display the tamagotchi's stats
-- [ ] Prompt user to interact with the tamagotchi (call the methods) - Menu?
+- [x] Prompt user to name the tamagotchi and choose a species
+- [x] Display the tamagotchi's stats
+- [x] Prompt user to interact with the tamagotchi
+- [ ] Add boundaries to the tamagotchi's stats
+- [ ] Create a Game class to manage the game
+
+# Future features
+
+- [ ] Persist the tamagotchi's stats in a database
+- [ ] Add ticker to alter stats between interactions
 - [ ] Create methods specific to the species (bark / miaow)

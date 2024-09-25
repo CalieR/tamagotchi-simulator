@@ -24,6 +24,7 @@ class Tamagotchi {
     }
     play() {
         this.happiness += 30;
+        this.hunger -= 10;
         this.energy -= 10;
     }
     bathe() {

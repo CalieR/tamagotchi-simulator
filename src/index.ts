@@ -22,8 +22,7 @@ async function createTamagotchi() {
   });
 
   const tamagotchi = new Tamagotchi(capitalise(name), species);
-  console.log(tamagotchi);
-  
+  console.log('Thank you! Your tamagotchi is ready to go.');
   displayMenu(tamagotchi);
 }
 
@@ -47,28 +46,41 @@ async function displayMenu(tamagotchi: Tamagotchi) {
         description: 'Play with your tamagotchi',
       },
       {
+        name: `Check ${tamagotchi.name}'s stats`,
+        value: 'stats',
+        description: "Check your tamagotchi's stats",
+      },
+      {
         name: 'Exit',
         value: 'exit',
         description: 'Exit the program',
-      }
+      },
     ],
   });
 
   if (selectedInteraction === 'feed') {
     console.log('Feeding your tamagotchi');
     tamagotchi.feed();
-    console.log(tamagotchi);
+    console.log(`The tamagotchi's hunger is now ${tamagotchi.hunger}`);
     displayMenu(tamagotchi);
-  } 
+  }
   if (selectedInteraction === 'bathe') {
     console.log('Bathing your tamagotchi');
     tamagotchi.bathe();
-    console.log(tamagotchi);
+    console.log("The tamagotchi's cleanliness is now 100%");
+    console.log(`The tamagotchi's health is now ${tamagotchi.health}`);
     displayMenu(tamagotchi);
   }
   if (selectedInteraction === 'play') {
-    console.log('Playing with your tamagotchi'); 
+    console.log('Playing with your tamagotchi');
     tamagotchi.play();
+    console.log(`The tamagotchi's happiness is now ${tamagotchi.happiness}`);
+    console.log(`The tamagotchi's energy is now ${tamagotchi.energy}`); 
+    console.log(`The tamagotchi's hunger is now ${tamagotchi.hunger}`);
+    displayMenu(tamagotchi);
+  }
+  if (selectedInteraction === 'stats') {
+    console.log("Checking your tamagotchi's stats");
     console.log(tamagotchi);
     displayMenu(tamagotchi);
   }
@@ -82,4 +94,3 @@ createTamagotchi();
 
 // add effects using chalk or similar to make the output easier to read.
 // give sleep() a timeout so user can wait for the tamagotchi to wake up.
-
