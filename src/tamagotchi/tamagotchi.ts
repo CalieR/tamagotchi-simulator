@@ -33,7 +33,12 @@ class Tamagotchi {
   }
 
   giveMedicine() {
+    if (this.health < 100) {
     this.health += 10;
+    }
+    if (this.health === 100) {
+      console.log("I'm not sick anymore!")
+    }
   }
 
   play() {
