@@ -7,3 +7,4 @@ describe('Game', () => {
 // game so initiate a game
 // game should create a tamagotchi
 // game should display a menu of interactions
+// game should calculate the age of the tamagotchi

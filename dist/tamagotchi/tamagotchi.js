@@ -2,6 +2,7 @@ class Tamagotchi {
     constructor(name, species) {
         this.name = name;
         this.species = species;
+        this.dateOfBirth = new Date();
         this.hunger = 100;
         this.health = 100;
         this.happiness = 100;

@@ -3,12 +3,13 @@ import Tamagotchi from "../tamagotchi/tamagotchi";
 describe("Tamagotchi", () => {
   describe("initialise a new tamagotchi", () => {
    test("it has the given name and species", () => {
-      const tamagotchi = new Tamagotchi("Bob", "cat");
+      const tamagotchi = new Tamagotchi("Bob", "cat", );
       expect(tamagotchi.name).toBe("Bob");
       expect(tamagotchi.species).toBe("cat");
     });
     test("it has the following stats", () => {
       const tamagotchi = new Tamagotchi("Bob", "cat");
+      expect(tamagotchi.dateOfBirth).toBeDefined();
       expect(tamagotchi.hunger).toBe(100); 
       expect(tamagotchi.health).toBe(100);
       expect(tamagotchi.happiness).toBe(100);
