@@ -1,4 +1,4 @@
-# Tamagotchi Simulator
+# Tamagotchi Simulator - CLI app
 
 A program that allows users to create and care for their own virtual pets.
 
